@@ -1,8 +1,7 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
 a = Analysis(
-    ['C:\\Users\\slckgms\\Downloads\\spotify_indir\\spotify_gui.py'],
+    ['spotify_gui.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -35,5 +34,39 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['C:\\Users\\slckgms\\Downloads\\spotify_indir\\SpotifyMP3.ico'],
+    icon=['SpotifyMP3.ico'],
 )
+```
+
+**`.gitignore` içeriği** (yeni dosya oluştur):
+```
+dist/
+build/
+*.spec
+installer.nsi
+ffmpeg_bin/
+*.exe
+*.pkg
+*.zip
+build_log.txt
+*.log
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+github-recovery-codes.txt
+*.env
+secrets.*
+```
+
+**`requirements.txt` içeriği** (yeni dosya oluştur):
+```
+yt-dlp>=2024.1.0
+requests>=2.31.0
+Pillow>=10.0.0
+pyinstaller>=6.0.0
