@@ -1,0 +1,39 @@
+# Build artifacts
+dist/
+build/
+*.spec
+
+# NSIS generated
+installer.nsi
+
+# Binaries
+ffmpeg_bin/
+*.exe
+*.pkg
+*.zip
+
+# Logs
+build_log.txt
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Sensitive - NEVER commit!
+github-recovery-codes.txt
+*.env
+secrets.*
