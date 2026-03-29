@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify MP3下载 – 免费Spotify音乐下载器 Windows</title>
+  <meta name="description" content="下载Spotify播放列表、专辑和歌曲为MP3、FLAC、WAV等格式。免费Windows应用，无需账户。">
+  <meta name="keywords" content="spotify mp3下载, spotify音乐下载, spotify播放列表下载, 免费音乐下载, spotify转mp3, spotify下载器">
+  <meta property="og:title" content="Spotify MP3下载 – 免费Spotify音乐下载器 Windows">
+  <meta property="og:description" content="下载Spotify播放列表、专辑和歌曲为MP3、FLAC、WAV等格式。免费Windows应用，无需账户。">
+  <meta property="og:image" content="https://slckgms.github.io/spotify-mp3-downloader/SpotifyMP3_256.png">
+  <meta property="og:url" content="https://slckgms.github.io/spotify-mp3-downloader/zh/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spotify MP3下载 – 免费Spotify音乐下载器 Windows">
+  <meta name="twitter:description" content="下载Spotify播放列表、专辑和歌曲为MP3、FLAC、WAV等格式。免费Windows应用，无需账户。">
+  <link rel="icon" href="../SpotifyMP3.ico" type="image/x-icon">
+  <link rel="alternate" hreflang="en" href="https://slckgms.github.io/spotify-mp3-downloader/">
+  <link rel="alternate" hreflang="tr" href="https://slckgms.github.io/spotify-mp3-downloader/tr/">
+  <link rel="alternate" hreflang="de" href="https://slckgms.github.io/spotify-mp3-downloader/de/">
+  <link rel="alternate" hreflang="es" href="https://slckgms.github.io/spotify-mp3-downloader/es/">
+  <link rel="alternate" hreflang="fr" href="https://slckgms.github.io/spotify-mp3-downloader/fr/">
+  <link rel="alternate" hreflang="it" href="https://slckgms.github.io/spotify-mp3-downloader/it/">
+  <link rel="alternate" hreflang="pt" href="https://slckgms.github.io/spotify-mp3-downloader/pt/">
+  <link rel="alternate" hreflang="ru" href="https://slckgms.github.io/spotify-mp3-downloader/ru/">
+  <link rel="alternate" hreflang="zh" href="https://slckgms.github.io/spotify-mp3-downloader/zh/">
+  <link rel="alternate" hreflang="ja" href="https://slckgms.github.io/spotify-mp3-downloader/ja/">
+  <link rel="alternate" hreflang="ko" href="https://slckgms.github.io/spotify-mp3-downloader/ko/">
+  <link rel="alternate" hreflang="ar" href="https://slckgms.github.io/spotify-mp3-downloader/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://slckgms.github.io/spotify-mp3-downloader/">
+  <link rel="canonical" href="https://slckgms.github.io/spotify-mp3-downloader/zh/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Spotify MP3下载器",
+    "description": "免费Windows应用，用于将Spotify播放列表、专辑和歌曲下载为MP3、FLAC、WAV等格式。",
+    "url": "https://slckgms.github.io/spotify-mp3-downloader/zh/",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "downloadUrl": "https://github.com/slckgms/spotify-mp3-downloader/releases/latest",
+    "softwareVersion": "1.0",
+    "author": {
+      "@type": "Person",
+      "name": "slckgms",
+      "url": "https://github.com/slckgms/spotify-mp3-downloader"
+    }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #1ed760;
+      --green-dark: #17b34d;
+      --bg: #0b0f0b;
+      --card: #111711;
+      --card2: #141a14;
+      --text: #e8ffe8;
+      --muted: #8a9e8a;
+      --border: #1e2e1e;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--green); text-decoration: none; }
+    /* NAV */
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 60px; background: rgba(11,15,11,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+    .nav-brand { display: flex; align-items: center; gap: .5rem; font-weight: 700; font-size: 1.05rem; color: var(--text); }
+    .nav-brand img { width: 28px; height: 28px; border-radius: 6px; }
+    .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+    .nav-links a { color: var(--muted); font-size: .9rem; transition: color .2s; }
+    .nav-links a:hover { color: var(--text); }
+    .btn-nav { background: var(--green); color: #000 !important; padding: .45rem 1.1rem; border-radius: 20px; font-weight: 600; font-size: .88rem; transition: background .2s; }
+    .btn-nav:hover { background: var(--green-dark) !important; }
+    /* HERO */
+    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 5rem 1.5rem 4rem; gap: 1.5rem; }
+    .hero img { width: 90px; height: 90px; border-radius: 20px; box-shadow: 0 0 40px rgba(30,215,96,.25); }
+    .badge { background: rgba(30,215,96,.1); border: 1px solid rgba(30,215,96,.3); color: var(--green); padding: .3rem 1rem; border-radius: 20px; font-size: .83rem; font-weight: 600; }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 800; line-height: 1.1; }
+    h1 span { color: var(--green); }
+    .hero-sub { color: var(--muted); font-size: 1.1rem; max-width: 520px; }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn-primary { background: var(--green); color: #000; padding: .75rem 1.8rem; border-radius: 30px; font-weight: 700; font-size: 1rem; transition: background .2s, transform .15s; }
+    .btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); }
+    .btn-secondary { background: transparent; color: var(--text); border: 1.5px solid var(--border); padding: .75rem 1.8rem; border-radius: 30px; font-weight: 600; font-size: 1rem; transition: border-color .2s; }
+    .btn-secondary:hover { border-color: var(--muted); }
+    .hero-note { color: var(--muted); font-size: .83rem; }
+    /* STATS */
+    .stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; padding: 2rem 1.5rem 3rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .stat { text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--green); }
+    .stat-label { color: var(--muted); font-size: .83rem; margin-top: .2rem; }
+    /* SECTIONS */
+    section { padding: 5rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .section-label { color: var(--green); font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .5rem; }
+    .section-title { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: .6rem; white-space: pre-line; }
+    .section-sub { color: var(--muted); margin-bottom: 2.5rem; }
+    /* FEATURES */
+    .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
+    .feat-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; transition: border-color .2s; }
+    .feat-card:hover { border-color: rgba(30,215,96,.4); }
+    .feat-icon { font-size: 1.5rem; margin-bottom: .7rem; }
+    .feat-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+    .feat-card p { color: var(--muted); font-size: .88rem; line-height: 1.5; }
+    /* FORMATS */
+    .formats { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 2rem; }
+    .fmt-badge { background: var(--card2); border: 1px solid var(--border); padding: .35rem .9rem; border-radius: 20px; font-size: .8rem; font-weight: 600; color: var(--green); }
+    /* HOW */
+    .how-section { background: var(--card); border-radius: 20px; padding: 3rem 2rem; margin: 0 auto; max-width: 1100px; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .step { text-align: center; }
+    .step-num { width: 48px; height: 48px; background: var(--green); color: #000; border-radius: 50%; font-size: 1.3rem; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
+    .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+    .step p { color: var(--muted); font-size: .87rem; }
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: .7rem; margin-top: 2rem; }
+    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .faq-q { width: 100%; text-align: left; background: none; border: none; color: var(--text); padding: 1rem 1.2rem; font-size: .95rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-q::after { content: '+'; color: var(--green); font-size: 1.2rem; font-weight: 400; }
+    .faq-item.open .faq-q::after { content: '−'; }
+    .faq-a { display: none; padding: 0 1.2rem 1rem; color: var(--muted); font-size: .88rem; }
+    .faq-item.open .faq-a { display: block; }
+    /* SUPPORT */
+    .support-box { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem; text-align: center; max-width: 500px; margin: 2rem auto 0; }
+    .support-box h3 { margin-bottom: .5rem; }
+    .wallet-label { font-size: .75rem; color: var(--muted); margin-top: 1.2rem; text-transform: uppercase; letter-spacing: .08em; }
+    .wallet-addr { font-family: monospace; font-size: .85rem; background: var(--card2); border: 1px solid var(--border); padding: .5rem 1rem; border-radius: 8px; margin: .4rem 0; word-break: break-all; }
+    .btn-copy { background: var(--green); color: #000; border: none; padding: .5rem 1.2rem; border-radius: 20px; font-weight: 600; cursor: pointer; font-size: .85rem; margin-top: .5rem; }
+    /* FOOTER */
+    footer { border-top: 1px solid var(--border); padding: 2rem 1.5rem; text-align: center; color: var(--muted); font-size: .82rem; }
+    .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: .8rem; }
+    .footer-links a { color: var(--muted); }
+    .footer-links a:hover { color: var(--text); }
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .stats { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-brand">
+    <img src="../SpotifyMP3.ico" alt="Spotify MP3">
+    <span>Spotify MP3</span>
+  </a>
+  <div class="nav-links">
+    <a href="#features">功能</a>
+    <a href="#how">使用方法</a>
+    <a href="#faq">常见问题</a>
+    <a href="mailto:spotifymp3app@gmail.com">联系</a>
+    <a href="https://github.com/slckgms/spotify-mp3-downloader/releases/latest" class="btn-nav">⬇ Download</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <img src="../SpotifyMP3_256.png" alt="Spotify MP3下载器">
+  <span class="badge">✦ 免费 & 开源</span>
+  <h1>下载Spotify<br><span>为MP3、FLAC等格式</span></h1>
+  <p class="hero-sub">粘贴任意Spotify播放列表、专辑或歌曲链接 — 几秒内下载高质量音频。无需账户。</p>
+  <div class="hero-btns">
+    <a href="https://github.com/slckgms/spotify-mp3-downloader/releases/latest" class="btn-primary">⬇ 下载 Windows版</a>
+    <a href="https://github.com/slckgms/spotify-mp3-downloader" class="btn-secondary">★ 在GitHub查看</a>
+  </div>
+  <p class="hero-note">Windows 10/11 · 永久免费 · 无广告</p>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">9</div><div class="stat-label">Audio Formats</div></div>
+  <div class="stat"><div class="stat-num">320</div><div class="stat-label">kbps Quality</div></div>
+  <div class="stat"><div class="stat-num">12</div><div class="stat-label">Languages</div></div>
+  <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Tracks / Playlist</div></div>
+</div>
+
+<section id="features">
+  <div class="section-label">功能</div>
+  <div class="section-title">一切所需，
+毫无多余</div>
+  <p class="section-sub">简洁、快速、好用的下载器。</p>
+  <div class="feat-grid">
+        <div class="feat-card">
+          <div class="feat-icon">🎵</div>
+          <h3>播放列表和专辑支持</h3>
+          <p>一键下载完整播放列表或专辑。支持500+首歌曲的播放列表，无限制。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🎚️</div>
+          <h3>9种音频格式</h3>
+          <p>MP3、FLAC、WAV、M4A、OGG、OPUS、AAC、AIFF、ALAC。无损或压缩 — 您的选择。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🏷️</div>
+          <h3>自动元数据</h3>
+          <p>标题、艺术家、专辑信息和封面自动嵌入每个文件。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🔄</div>
+          <h3>智能重试</h3>
+          <p>网络中断？应用自动暂停，连接恢复后自动继续。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🌍</div>
+          <h3>12种语言</h3>
+          <p>中文、英语、土耳其语、德语、俄语、西班牙语、法语、葡萄牙语、阿拉伯语、日语、韩语、意大利语。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">📦</div>
+          <h3>一体化安装程序</h3>
+          <p>内置ffmpeg。一个安装程序，无需额外下载或配置。</p>
+        </div>
+  </div>
+  <div class="formats">
+    <span class="fmt-badge">MP3</span><span class="fmt-badge">FLAC</span><span class="fmt-badge">WAV</span>
+    <span class="fmt-badge">M4A</span><span class="fmt-badge">OGG</span><span class="fmt-badge">OPUS</span>
+    <span class="fmt-badge">AAC</span><span class="fmt-badge">AIFF</span><span class="fmt-badge">ALAC</span>
+  </div>
+</section>
+
+<div class="how-section" id="how">
+  <div style="text-align:center">
+    <div class="section-label">使用方法</div>
+    <div class="section-title">简单如1、2、3</div>
+  </div>
+  <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>复制Spotify链接</h3>
+          <p>在Spotify上打开任意播放列表、专辑或歌曲。分享 → 复制链接。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>粘贴并获取</h3>
+          <p>将链接粘贴到应用中。点击"获取" — 歌曲列表立即加载。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>选择并下载</h3>
+          <p>选择格式和质量。点击下载。完成。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>享受您的音乐</h3>
+          <p>文件保存时带有完整元数据和封面。随时随地可以播放。</p>
+        </div>
+  </div>
+</div>
+
+<section id="faq">
+  <div class="section-label">常见问题</div>
+  <div class="section-title">常见问题</div>
+  <p class="section-sub">您需要了解的一切。</p>
+  <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">安全吗？Windows Defender标记了它。</button>
+          <div class="faq-a"><p>是的，完全安全。警告出现是因为该应用是未签名的独立软件 — 不是因为它有害。您可以在GitHub上验证源代码。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">需要Spotify账户吗？</button>
+          <div class="faq-a"><p>不需要。该应用只读取公开的播放列表信息。无需登录、API密钥或Spotify账户。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">支持100+首歌曲的播放列表吗？</button>
+          <div class="faq-a"><p>支持！该应用使用自定义方法绕过Spotify的100首歌曲限制。已在500+首歌曲的播放列表上测试。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">为什么下载很慢？</button>
+          <div class="faq-a"><p>每首歌曲需要在YouTube Music上搜索和下载。根据您的网络，平均每首歌15-30秒。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">支持Mac或Linux吗？</button>
+          <div class="faq-a"><p>目前仅支持Windows 10/11。Mac和Linux支持可能在未来版本中添加。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">一些歌曲下载失败 — 为什么？</button>
+          <div class="faq-a"><p>在YouTube Music上不可用的稀有歌曲可能会失败。失败的歌曲保存在"failed_tracks.txt"文件中供查看。</p></div>
+        </div>
+  </div>
+</section>
+
+<section style="text-align:center">
+  <div class="section-title">支持项目</div>
+  <p class="section-sub">如果这个应用为您节省了时间，请考虑请我喝杯咖啡。每一份贡献都使项目持续发展。</p>
+  <div class="support-box">
+    <div class="wallet-label">USDT TRC-20 (Tron Network)</div>
+    <div class="wallet-addr">TEJPv2oUN8Cw8fhGoej5mFhCD8nve3xGMd</div>
+    <button class="btn-copy" onclick="navigator.clipboard.writeText('TEJPv2oUN8Cw8fhGoej5mFhCD8nve3xGMd');this.textContent='✓ Copied!'">📋 Copy Address</button>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://github.com/slckgms/spotify-mp3-downloader">GitHub</a>
+    <a href="https://github.com/slckgms/spotify-mp3-downloader/releases/latest">Download</a>
+    <a href="https://github.com/slckgms/spotify-mp3-downloader/issues">Report Bug</a>
+    <a href="mailto:spotifymp3app@gmail.com">联系</a>
+  </div>
+  <p>由❤️制作 <a href="https://github.com/slckgms/spotify-mp3-downloader">slckgms</a> · <a href="https://github.com/slckgms/spotify-mp3-downloader/blob/main/LICENSE">MIT License</a></p>
+  <p style="margin-top:.5rem;max-width:600px;margin-left:auto;margin-right:auto">本软件仅供个人使用。下载的内容仍属于其版权所有者。</p>
+</footer>
+</body>
+</html>
