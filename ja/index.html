@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify MP3ダウンロード – 無料Spotifyダウンローダー Windows</title>
+  <meta name="description" content="SpotifyのプレイリストやアルバムをMP3、FLAC、WAVでダウンロード。無料Windowsアプリ。アカウント不要。">
+  <meta name="keywords" content="spotify mp3 ダウンロード, spotify 音楽 ダウンロード 無料, spotify プレイリスト ダウンロード, spotify ダウンローダー, spotify mp3変換">
+  <meta property="og:title" content="Spotify MP3ダウンロード – 無料Spotifyダウンローダー Windows">
+  <meta property="og:description" content="SpotifyのプレイリストやアルバムをMP3、FLAC、WAVでダウンロード。無料Windowsアプリ。アカウント不要。">
+  <meta property="og:image" content="https://slckgms.github.io/spotify-mp3-downloader/SpotifyMP3_256.png">
+  <meta property="og:url" content="https://slckgms.github.io/spotify-mp3-downloader/ja/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spotify MP3ダウンロード – 無料Spotifyダウンローダー Windows">
+  <meta name="twitter:description" content="SpotifyのプレイリストやアルバムをMP3、FLAC、WAVでダウンロード。無料Windowsアプリ。アカウント不要。">
+  <link rel="icon" href="../SpotifyMP3.ico" type="image/x-icon">
+  <link rel="alternate" hreflang="en" href="https://slckgms.github.io/spotify-mp3-downloader/">
+  <link rel="alternate" hreflang="tr" href="https://slckgms.github.io/spotify-mp3-downloader/tr/">
+  <link rel="alternate" hreflang="de" href="https://slckgms.github.io/spotify-mp3-downloader/de/">
+  <link rel="alternate" hreflang="es" href="https://slckgms.github.io/spotify-mp3-downloader/es/">
+  <link rel="alternate" hreflang="fr" href="https://slckgms.github.io/spotify-mp3-downloader/fr/">
+  <link rel="alternate" hreflang="it" href="https://slckgms.github.io/spotify-mp3-downloader/it/">
+  <link rel="alternate" hreflang="pt" href="https://slckgms.github.io/spotify-mp3-downloader/pt/">
+  <link rel="alternate" hreflang="ru" href="https://slckgms.github.io/spotify-mp3-downloader/ru/">
+  <link rel="alternate" hreflang="zh" href="https://slckgms.github.io/spotify-mp3-downloader/zh/">
+  <link rel="alternate" hreflang="ja" href="https://slckgms.github.io/spotify-mp3-downloader/ja/">
+  <link rel="alternate" hreflang="ko" href="https://slckgms.github.io/spotify-mp3-downloader/ko/">
+  <link rel="alternate" hreflang="ar" href="https://slckgms.github.io/spotify-mp3-downloader/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://slckgms.github.io/spotify-mp3-downloader/">
+  <link rel="canonical" href="https://slckgms.github.io/spotify-mp3-downloader/ja/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Spotify MP3ダウンローダー",
+    "description": "SpotifyのプレイリストやアルバムをMP3、FLAC、WAVなどの形式でダウンロードするための無料Windowsアプリ。",
+    "url": "https://slckgms.github.io/spotify-mp3-downloader/ja/",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "downloadUrl": "https://github.com/slckgms/spotify-mp3-downloader/releases/latest",
+    "softwareVersion": "1.0",
+    "author": {
+      "@type": "Person",
+      "name": "slckgms",
+      "url": "https://github.com/slckgms/spotify-mp3-downloader"
+    }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #1ed760;
+      --green-dark: #17b34d;
+      --bg: #0b0f0b;
+      --card: #111711;
+      --card2: #141a14;
+      --text: #e8ffe8;
+      --muted: #8a9e8a;
+      --border: #1e2e1e;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--green); text-decoration: none; }
+    /* NAV */
+    nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 60px; background: rgba(11,15,11,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+    .nav-brand { display: flex; align-items: center; gap: .5rem; font-weight: 700; font-size: 1.05rem; color: var(--text); }
+    .nav-brand img { width: 28px; height: 28px; border-radius: 6px; }
+    .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+    .nav-links a { color: var(--muted); font-size: .9rem; transition: color .2s; }
+    .nav-links a:hover { color: var(--text); }
+    .btn-nav { background: var(--green); color: #000 !important; padding: .45rem 1.1rem; border-radius: 20px; font-weight: 600; font-size: .88rem; transition: background .2s; }
+    .btn-nav:hover { background: var(--green-dark) !important; }
+    /* HERO */
+    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 5rem 1.5rem 4rem; gap: 1.5rem; }
+    .hero img { width: 90px; height: 90px; border-radius: 20px; box-shadow: 0 0 40px rgba(30,215,96,.25); }
+    .badge { background: rgba(30,215,96,.1); border: 1px solid rgba(30,215,96,.3); color: var(--green); padding: .3rem 1rem; border-radius: 20px; font-size: .83rem; font-weight: 600; }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 800; line-height: 1.1; }
+    h1 span { color: var(--green); }
+    .hero-sub { color: var(--muted); font-size: 1.1rem; max-width: 520px; }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .btn-primary { background: var(--green); color: #000; padding: .75rem 1.8rem; border-radius: 30px; font-weight: 700; font-size: 1rem; transition: background .2s, transform .15s; }
+    .btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); }
+    .btn-secondary { background: transparent; color: var(--text); border: 1.5px solid var(--border); padding: .75rem 1.8rem; border-radius: 30px; font-weight: 600; font-size: 1rem; transition: border-color .2s; }
+    .btn-secondary:hover { border-color: var(--muted); }
+    .hero-note { color: var(--muted); font-size: .83rem; }
+    /* STATS */
+    .stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; padding: 2rem 1.5rem 3rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .stat { text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--green); }
+    .stat-label { color: var(--muted); font-size: .83rem; margin-top: .2rem; }
+    /* SECTIONS */
+    section { padding: 5rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .section-label { color: var(--green); font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .5rem; }
+    .section-title { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: .6rem; white-space: pre-line; }
+    .section-sub { color: var(--muted); margin-bottom: 2.5rem; }
+    /* FEATURES */
+    .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
+    .feat-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; transition: border-color .2s; }
+    .feat-card:hover { border-color: rgba(30,215,96,.4); }
+    .feat-icon { font-size: 1.5rem; margin-bottom: .7rem; }
+    .feat-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+    .feat-card p { color: var(--muted); font-size: .88rem; line-height: 1.5; }
+    /* FORMATS */
+    .formats { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 2rem; }
+    .fmt-badge { background: var(--card2); border: 1px solid var(--border); padding: .35rem .9rem; border-radius: 20px; font-size: .8rem; font-weight: 600; color: var(--green); }
+    /* HOW */
+    .how-section { background: var(--card); border-radius: 20px; padding: 3rem 2rem; margin: 0 auto; max-width: 1100px; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .step { text-align: center; }
+    .step-num { width: 48px; height: 48px; background: var(--green); color: #000; border-radius: 50%; font-size: 1.3rem; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
+    .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+    .step p { color: var(--muted); font-size: .87rem; }
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: .7rem; margin-top: 2rem; }
+    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .faq-q { width: 100%; text-align: left; background: none; border: none; color: var(--text); padding: 1rem 1.2rem; font-size: .95rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-q::after { content: '+'; color: var(--green); font-size: 1.2rem; font-weight: 400; }
+    .faq-item.open .faq-q::after { content: '−'; }
+    .faq-a { display: none; padding: 0 1.2rem 1rem; color: var(--muted); font-size: .88rem; }
+    .faq-item.open .faq-a { display: block; }
+    /* SUPPORT */
+    .support-box { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem; text-align: center; max-width: 500px; margin: 2rem auto 0; }
+    .support-box h3 { margin-bottom: .5rem; }
+    .wallet-label { font-size: .75rem; color: var(--muted); margin-top: 1.2rem; text-transform: uppercase; letter-spacing: .08em; }
+    .wallet-addr { font-family: monospace; font-size: .85rem; background: var(--card2); border: 1px solid var(--border); padding: .5rem 1rem; border-radius: 8px; margin: .4rem 0; word-break: break-all; }
+    .btn-copy { background: var(--green); color: #000; border: none; padding: .5rem 1.2rem; border-radius: 20px; font-weight: 600; cursor: pointer; font-size: .85rem; margin-top: .5rem; }
+    /* FOOTER */
+    footer { border-top: 1px solid var(--border); padding: 2rem 1.5rem; text-align: center; color: var(--muted); font-size: .82rem; }
+    .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: .8rem; }
+    .footer-links a { color: var(--muted); }
+    .footer-links a:hover { color: var(--text); }
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .stats { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-brand">
+    <img src="../SpotifyMP3.ico" alt="Spotify MP3">
+    <span>Spotify MP3</span>
+  </a>
+  <div class="nav-links">
+    <a href="#features">機能</a>
+    <a href="#how">使い方</a>
+    <a href="#faq">FAQ</a>
+    <a href="mailto:spotifymp3app@gmail.com">お問い合わせ</a>
+    <a href="https://github.com/slckgms/spotify-mp3-downloader/releases/latest" class="btn-nav">⬇ Download</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <img src="../SpotifyMP3_256.png" alt="Spotify MP3ダウンローダー">
+  <span class="badge">✦ 無料 & オープンソース</span>
+  <h1>Spotifyをダウンロード<br><span>MP3、FLACなど多数の形式で</span></h1>
+  <p class="hero-sub">Spotifyのプレイリストやアルバムのリンクを貼るだけ — 数秒で高品質オーディオをダウンロード。アカウント不要。</p>
+  <div class="hero-btns">
+    <a href="https://github.com/slckgms/spotify-mp3-downloader/releases/latest" class="btn-primary">⬇ Windows版をダウンロード</a>
+    <a href="https://github.com/slckgms/spotify-mp3-downloader" class="btn-secondary">★ GitHubで見る</a>
+  </div>
+  <p class="hero-note">Windows 10/11 · 永久無料 · 広告なし</p>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">9</div><div class="stat-label">Audio Formats</div></div>
+  <div class="stat"><div class="stat-num">320</div><div class="stat-label">kbps Quality</div></div>
+  <div class="stat"><div class="stat-num">12</div><div class="stat-label">Languages</div></div>
+  <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Tracks / Playlist</div></div>
+</div>
+
+<section id="features">
+  <div class="section-label">機能</div>
+  <div class="section-title">必要なものはすべて、
+不要なものは一切なし</div>
+  <p class="section-sub">シンプルで速く、ただ動くダウンローダー。</p>
+  <div class="feat-grid">
+        <div class="feat-card">
+          <div class="feat-icon">🎵</div>
+          <h3>プレイリスト＆アルバム対応</h3>
+          <p>プレイリストやアルバム全体をワンクリックでダウンロード。500曲以上のプレイリストも制限なしで対応。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🎚️</div>
+          <h3>9種類のオーディオ形式</h3>
+          <p>MP3、FLAC、WAV、M4A、OGG、OPUS、AAC、AIFF、ALAC。ロスレスまたは圧縮 — あなたの選択。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🏷️</div>
+          <h3>自動メタデータ</h3>
+          <p>タイトル、アーティスト、アルバム情報、カバーアートがすべてのファイルに自動で埋め込まれます。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🔄</div>
+          <h3>スマートリトライ</h3>
+          <p>インターネットが切れた？接続が回復すると自動的に再開します。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🌍</div>
+          <h3>12言語対応</h3>
+          <p>日本語、英語、トルコ語、ドイツ語、ロシア語、中国語、スペイン語、フランス語、ポルトガル語、アラビア語、韓国語、イタリア語。</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">📦</div>
+          <h3>オールインワンインストーラー</h3>
+          <p>ffmegが内蔵済み。ひとつのインストーラーで、追加ダウンロードや設定は不要。</p>
+        </div>
+  </div>
+  <div class="formats">
+    <span class="fmt-badge">MP3</span><span class="fmt-badge">FLAC</span><span class="fmt-badge">WAV</span>
+    <span class="fmt-badge">M4A</span><span class="fmt-badge">OGG</span><span class="fmt-badge">OPUS</span>
+    <span class="fmt-badge">AAC</span><span class="fmt-badge">AIFF</span><span class="fmt-badge">ALAC</span>
+  </div>
+</section>
+
+<div class="how-section" id="how">
+  <div style="text-align:center">
+    <div class="section-label">使い方</div>
+    <div class="section-title">1、2、3と同じくらい簡単</div>
+  </div>
+  <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>SpotifyリンクをコピーYour</h3>
+          <p>Spotifyで任意のプレイリスト、アルバム、またはトラックを開く。共有 → リンクをコピー。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>貼り付けて取得</h3>
+          <p>"取得"をクリック — トラックリストが即座に読み込まれます。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>選んでダウンロード</h3>
+          <p>フォーマットと品質を選択。ダウンロードを押す。完了。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>音楽を楽しもう</h3>
+          <p>ファイルはメタデータとカバーアート付きで保存。どこでも再生可能。</p>
+        </div>
+  </div>
+</div>
+
+<section id="faq">
+  <div class="section-label">FAQ</div>
+  <div class="section-title">よくある質問</div>
+  <p class="section-sub">知っておくべきこと。</p>
+  <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">安全ですか？Windows Defenderが警告を出しました。</button>
+          <div class="faq-a"><p>はい、完全に安全です。警告は署名されていないインディーソフトウェアだからであり、有害だからではありません。GitHubでソースコードを確認できます。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Spotifyアカウントは必要ですか？</button>
+          <div class="faq-a"><p>不要です。アプリは公開されているプレイリスト情報のみを読み取ります。ログイン、APIキー、Spotifyアカウントは不要です。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">100曲以上のプレイリストは対応していますか？</button>
+          <div class="faq-a"><p>はい！アプリはSpotifyの100曲制限を回避するカスタム方式を使用しています。500曲以上のプレイリストでテスト済みです。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">なぜダウンロードが遅いのですか？</button>
+          <div class="faq-a"><p>各トラックにはYouTube Musicでの検索とダウンロードが必要です。接続によりますが、1トラックあたり平均15〜30秒かかります。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">MacやLinuxはサポートされていますか？</button>
+          <div class="faq-a"><p>現在はWindows 10/11のみです。MacとLinuxのサポートは将来のリリースで追加される可能性があります。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">一部のトラックがダウンロードできませんでした — なぜですか？</button>
+          <div class="faq-a"><p>YouTube Musicで入手できない希少なトラックは失敗する場合があります。失敗したトラックはレビュー用に"failed_tracks.txt"ファイルに保存されます。</p></div>
+        </div>
+  </div>
+</section>
+
+<section style="text-align:center">
+  <div class="section-title">プロジェクトを支援</div>
+  <p class="section-sub">このアプリが時間を節約できたなら、コーヒー一杯ご馳走ください。すべての貢献がプロジェクトを存続させます。</p>
+  <div class="support-box">
+    <div class="wallet-label">USDT TRC-20 (Tron Network)</div>
+    <div class="wallet-addr">TEJPv2oUN8Cw8fhGoej5mFhCD8nve3xGMd</div>
+    <button class="btn-copy" onclick="navigator.clipboard.writeText('TEJPv2oUN8Cw8fhGoej5mFhCD8nve3xGMd');this.textContent='✓ Copied!'">📋 Copy Address</button>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://github.com/slckgms/spotify-mp3-downloader">GitHub</a>
+    <a href="https://github.com/slckgms/spotify-mp3-downloader/releases/latest">Download</a>
+    <a href="https://github.com/slckgms/spotify-mp3-downloader/issues">Report Bug</a>
+    <a href="mailto:spotifymp3app@gmail.com">お問い合わせ</a>
+  </div>
+  <p>❤️で作られました by <a href="https://github.com/slckgms/spotify-mp3-downloader">slckgms</a> · <a href="https://github.com/slckgms/spotify-mp3-downloader/blob/main/LICENSE">MIT License</a></p>
+  <p style="margin-top:.5rem;max-width:600px;margin-left:auto;margin-right:auto">このソフトウェアは個人使用のみを目的としています。ダウンロードされたコンテンツは著作権者の財産のままです。</p>
+</footer>
+</body>
+</html>
